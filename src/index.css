@@ -1,0 +1,163 @@
+/* CUSTOM PROPERTIES */
+
+:root{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:62.5%;
+}
+
+body{
+    font-size:1.6rem;
+    line-height:1.6;
+}
+
+
+/* MARGINS AND PADDINGS */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* MEDIA RESETS */
+
+img, picture, video, iframe, figure{
+    max-width:100%;
+    height:auto;
+    display:block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* LINKS RESETS */
+
+a{
+    display:inline-block;
+    text-decoration: none;  
+    color:inherit;
+}
+
+/* LIST RESETS */
+
+li{
+    list-style:none;
+}
+ /* SVG RESET */
+
+svg{
+    width:100%;
+    display:block;
+}
+
+.container {
+    width:100%;
+    height: 17rem;
+    background-image: url(assets/images/header-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+   width: 246px;
+   height:66px;
+}
+
+.nav-container {
+    max-width: 120rem;
+    height:17rem;
+    margin:0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.cart-icon {
+    width:4rem;
+}
+
+.menu-button {
+    display:flex;
+    gap:4rem;
+}
+
+.menu-button button {
+    background-color:unset;
+    border: unset;
+    border: 1px solid white;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    color:  #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size:1.6rem;
+    cursor: pointer;
+}
+
+.menu-button button:hover{
+    border: 1px solid #FFCA01;
+    color: #FFCA01;
+}
+
+
+.cart-container {
+    display:flex;
+    justify-content: space-around;
+    width:8rem;
+}
+
+.cantidad-cart {
+    width:2.5rem;
+    height:2.5rem;
+    background-color: #FF9800;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color:#000;
+    font-weight: 600;
+}
+
+.banner-container {
+    width: 100%;
+    
+}
+
+.container-banner {
+    max-width:120rem;
+    height:65rem;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:5rem;
+
+}
+
+.banner-img-container {
+    flex-basis: 50%;
+}
+.text-container {
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.titulo-h1 {
+   font-family: 'Oswald', sans-serif;
+   font-size: 10rem;
+   color: #000;
+}
+
+.titulo-h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size:3rem;
+    line-height: 1.3;
+    margin-top:-3rem;
+}
+
+.button-banner {
+    background-color:#FF9800;
+    border:none;
+    padding:2rem 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size:1.6rem;
+    margin-top:2rem;
+    cursor:pointer;
+}
