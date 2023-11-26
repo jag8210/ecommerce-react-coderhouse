@@ -1,0 +1,54 @@
+
+.counter {
+    width: 100%;
+    margin:3rem 0;
+}
+
+
+@media (min-width:768px){
+    .counter {
+    max-width: 20rem;
+    margin:3rem 0;
+}
+}
+.counter h5 {
+    text-align: center;
+    margin-bottom:1rem;
+}
+
+
+
+
+.controls {
+    width:20rem;
+    justify-content: space-around;
+    display:flex;
+    margin:0 auto;
+}
+
+@media (min-width:768px) {
+    .controls {
+    width:20rem;
+    justify-content: space-between;
+
+}
+}
+
+.button {
+    padding: .5rem 1rem;
+}
+
+.number {
+ font-size: 1.8rem;
+}
+.button-cart {
+    width:100%;
+    background-color:#FF9800;
+    border:none;
+    padding:1rem 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size:1.6rem;
+    margin-top:2rem;
+    cursor:pointer;
+}

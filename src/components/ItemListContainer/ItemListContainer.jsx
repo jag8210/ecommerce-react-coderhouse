@@ -1,20 +1,36 @@
-import React from 'react'
-import bannerImg from "../../assets/images/img-banner.png"
+import {useState, useEffect} from 'react'
+import { useParams } from 'react-router-dom';
+import ItemList from '../ItemList/ItemList.jsx';
+import { getProducts } from '../../asyncMock.js';
+import { getProductsByCategory } from '../../asyncMock.js';
 
-const ItemListContainer = ({ greeting, underGreeting }) => {
+const ItemListContainer = () => {
+    const [products, setProducts] = useState([])
+
+    const {categoria} = useParams();
+    console.log(categoria)
+
+    useEffect(()=> {
+
+        const asyncFunc = categoria ? getProductsByCategory : getProducts
+
+        asyncFunc(categoria)
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    },[categoria])
+
+
       return (
-            
-                  <div className="container-banner">
-                        <div className="text-container">
-                              <h1 className="titulo-h1">{greeting}</h1>
-                              <h2 className="titulo-h2">{underGreeting}</h2>
-                              <button className='button-banner'>VER PRODUCTOS</button>
-                        </div>
-                        <div className="banner-img-container">
-                              <img src={bannerImg} alt="Imagen Banner" />
-                        </div>
+            <>
+                  
+                  <div className='item-list-container'>
+                    <ItemList products = {products}/>
                   </div>
-            
+            </>
       );
 };
 

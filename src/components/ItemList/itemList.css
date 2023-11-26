@@ -1,0 +1,29 @@
+
+
+
+.list-group {
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+@media (min-width:768px) {
+.list-group {
+    padding:0 10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+}
+
+@media (min-width:1080px) {
+    .list-group{
+    max-width: 140rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+}

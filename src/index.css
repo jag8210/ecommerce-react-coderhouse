@@ -80,7 +80,7 @@ svg{
     gap:4rem;
 }
 
-.menu-button button {
+.option, .active-option{
     background-color:unset;
     border: unset;
     border: 1px solid white;
@@ -92,7 +92,12 @@ svg{
     cursor: pointer;
 }
 
-.menu-button button:hover{
+.option:hover{
+    border: 1px solid #FFCA01;
+    color: #FFCA01;
+}
+
+.active-option {
     border: 1px solid #FFCA01;
     color: #FFCA01;
 }
