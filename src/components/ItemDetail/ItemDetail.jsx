@@ -4,7 +4,7 @@ import './itemDetail.css'
 
 const ItemDetail = ({id, title, image, category, description, price, stock}) => {
 
-   
+   console.log(title)
   return (
         <div className="card-item">
               <picture className='container-img'>
